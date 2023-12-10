@@ -7,6 +7,12 @@ from pets.models import Pets
 class PetsListView(ListView):
     model = Pets
     
+
 class PetCreateView(CreateView):
+    model = Pets
+    fields = ["title", "description"]
+    
+
+class PetUpdateView(UpdateView):
     model = Pets
     fields = ["title", "description"]
