@@ -16,3 +16,7 @@ class PetCreateView(CreateView):
 class PetUpdateView(UpdateView):
     model = Pets
     fields = ["title", "description"]
+    
+    
+class PetDetailView(DetailView):
+    model = Pets
